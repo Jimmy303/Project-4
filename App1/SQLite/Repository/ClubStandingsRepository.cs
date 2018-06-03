@@ -220,6 +220,11 @@ namespace SQLite.Repository
         {
             return clubs_Standings;
         }
+        
+        public List<clubs_standings> Search(string Search)
+        {
+            return clubs_Standings.Where(C => C.Name.Contains(Search)).ToList();
+        }
 
         public clubs_standings GetClubs_Standing(string name)
         {
