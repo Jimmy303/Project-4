@@ -51,6 +51,8 @@
   <ItemGroup>
     <Compile Include="Clubs.cs" />
     <Compile Include="Feyenoord.cs" />
+    <Compile Include="Helper\DBHelper.cs" />
+    <Compile Include="Helper\Speler.cs" />
     <Compile Include="LoginTable.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Profiel.cs" />
@@ -70,6 +72,7 @@
     <AndroidResource Include="Resources\layout\Newuser.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\Raw\Spelers.db" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -99,6 +102,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Uitslagen.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\row.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
