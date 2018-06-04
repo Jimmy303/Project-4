@@ -41,11 +41,13 @@ namespace SQLite
             SetContentView(Resource.Layout.ClubStandingDetail);
 
             clubStandingsRepository = new ClubStandingsRepository();
-            SelectedStanding = clubStandingsRepository.GetClubs_Standing("Ajax");
-
+            var SelectedClub = Intent.Extras.GetString("Selectedclub");
+            SelectedStanding = clubStandingsRepository.GetClubs_Standing(SelectedClub);
+    
             FindViews();
             BindData();
             HandleEvents();
+
         }
 
         private void FindViews()
@@ -90,7 +92,7 @@ namespace SQLite
 
         private void BACKButton_Click(object sender, EventArgs e)
         {
-            //TODO
+            Finish();
         }
     }
 }

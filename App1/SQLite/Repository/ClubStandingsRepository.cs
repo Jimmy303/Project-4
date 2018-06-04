@@ -220,7 +220,12 @@ namespace SQLite.Repository
         {
             return clubs_Standings;
         }
-        
+        /// <summary>
+        /// Search button bekijkt input string van user of deze in clubnamenlijst(data) staat.
+        /// Deze geeft alle matches terug. Let op dat de clubnaam begint met een hoofdletter.
+        /// </summary>
+        /// <param name="Search"></param>
+        /// <returns></returns>
         public List<clubs_standings> Search(string Search)
         {
             return clubs_Standings.Where(C => C.Name.Contains(Search)).ToList();

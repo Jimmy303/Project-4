@@ -171,11 +171,11 @@ namespace SQLite
 			// aapt resource value: 0x7f060026
 			public const int scrollView1 = 2131099686;
 			
+			// aapt resource value: 0x7f060033
+			public const int searchBar = 2131099699;
+			
 			// aapt resource value: 0x7f060034
 			public const int searchButton = 2131099700;
-			
-			// aapt resource value: 0x7f060033
-			public const int searchText = 2131099699;
 			
 			// aapt resource value: 0x7f060001
 			public const int seekBar1 = 2131099649;

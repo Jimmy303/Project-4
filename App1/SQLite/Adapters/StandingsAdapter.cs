@@ -13,7 +13,7 @@ using SQLite.Models;
 
 namespace SQLite.Adapters
 {
-    class StandingsAdapter : BaseAdapter
+    class StandingsAdapter : BaseAdapter<clubs_standings>
     {
 
         List<clubs_standings> clubs_Standings;
@@ -50,14 +50,14 @@ namespace SQLite.Adapters
                 var inflater = context.GetSystemService(Context.LayoutInflaterService).JavaCast<LayoutInflater>();
                 //replace with your item and your holder items
                 //comment back in
-                //view = inflater.Inflate(Resource.Layout.item, parent, false);
-                //holder.Title = view.FindViewById<TextView>(Resource.Id.text);
+                view = inflater.Inflate(Android.Resource.Layout.SimpleListItem1, parent, false);
+                holder.Title = view.FindViewById<TextView>(Android.Resource.Id.Text1);
                 view.Tag = holder;
             }
 
 
             //fill in your items
-            //holder.Title.Text = "new text here";
+            holder.Title.Text = clubs_Standings[position].Name;
 
             return view;
         }
@@ -67,15 +67,16 @@ namespace SQLite.Adapters
         {
             get
             {
-                return 0;
+                return clubs_Standings.Count;
             }
         }
 
+        public override clubs_standings this[int position] => throw new NotImplementedException();
     }
 
     class StandingsAdapterViewHolder : Java.Lang.Object
     {
         //Your adapter views to re-use
-        //public TextView Title { get; set; }
+        public TextView Title { get; set; }
     }
 }
