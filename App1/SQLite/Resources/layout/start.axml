@@ -13,7 +13,7 @@
         android:id="@+id/txtstart"
         android:gravity="center" />
     <Button
-        android:text="Button"
+        android:text="Login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/startknop" />
