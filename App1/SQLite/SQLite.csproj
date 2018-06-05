@@ -49,14 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\StandingsAdapter.cs" />
     <Compile Include="Clubs.cs" />
+    <Compile Include="ClubStandingDetail.cs" />
     <Compile Include="Feyenoord.cs" />
     <Compile Include="Helper\DBHelper.cs" />
     <Compile Include="Helper\Speler.cs" />
     <Compile Include="LoginTable.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Models\clubs_standings.cs" />
     <Compile Include="Profiel.cs" />
     <Compile Include="RegisterActivity.cs" />
+    <Compile Include="Repository\ClubStandingsRepository.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLite.cs" />
@@ -105,6 +109,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\row.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\ClubStandingDetail.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

@@ -5,11 +5,43 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-    <TextView
-        android:text="Uitslagen"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:gravity="center" />
+        android:id="@+id/linearLayout1">
+        <Button
+            android:text="MENU"
+            android:id="@+id/menuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="Uitslagen"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/title"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="280.0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="SEARCH"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/searchButton" />
+    </LinearLayout>
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/STANDINGSLIST" />
 </LinearLayout>

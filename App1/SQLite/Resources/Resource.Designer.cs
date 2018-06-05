@@ -60,20 +60,53 @@ namespace SQLite
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060017
-			public const int Profieltxt = 2131099671;
+			// aapt resource value: 0x7f060010
+			public const int Draws = 2131099664;
 			
-			// aapt resource value: 0x7f06000d
-			public const int btnGetData = 2131099661;
-			
-			// aapt resource value: 0x7f060016
-			public const int btn_reg_create = 2131099670;
-			
-			// aapt resource value: 0x7f060012
-			public const int btnlogin = 2131099666;
+			// aapt resource value: 0x7f060014
+			public const int GoalDifference = 2131099668;
 			
 			// aapt resource value: 0x7f060013
-			public const int btnregister = 2131099667;
+			public const int GoalsAgainst = 2131099667;
+			
+			// aapt resource value: 0x7f060012
+			public const int GoalsFor = 2131099666;
+			
+			// aapt resource value: 0x7f060011
+			public const int Loss = 2131099665;
+			
+			// aapt resource value: 0x7f06000e
+			public const int MatchesPlayed = 2131099662;
+			
+			// aapt resource value: 0x7f06000d
+			public const int Name = 2131099661;
+			
+			// aapt resource value: 0x7f060015
+			public const int Points = 2131099669;
+			
+			// aapt resource value: 0x7f060023
+			public const int Profieltxt = 2131099683;
+			
+			// aapt resource value: 0x7f060035
+			public const int STANDINGSLIST = 2131099701;
+			
+			// aapt resource value: 0x7f06000f
+			public const int Wins = 2131099663;
+			
+			// aapt resource value: 0x7f060017
+			public const int back = 2131099671;
+			
+			// aapt resource value: 0x7f060019
+			public const int btnGetData = 2131099673;
+			
+			// aapt resource value: 0x7f060022
+			public const int btn_reg_create = 2131099682;
+			
+			// aapt resource value: 0x7f06001e
+			public const int btnlogin = 2131099678;
+			
+			// aapt resource value: 0x7f06001f
+			public const int btnregister = 2131099679;
 			
 			// aapt resource value: 0x7f060002
 			public const int button1 = 2131099650;
@@ -108,62 +141,86 @@ namespace SQLite
 			// aapt resource value: 0x7f06000a
 			public const int button9 = 2131099658;
 			
-			// aapt resource value: 0x7f06000e
-			public const int container = 2131099662;
+			// aapt resource value: 0x7f060018
+			public const int compare = 2131099672;
+			
+			// aapt resource value: 0x7f06001a
+			public const int container = 2131099674;
 			
 			// aapt resource value: 0x7f060005
 			public const int feyknop = 2131099653;
 			
-			// aapt resource value: 0x7f060018
-			public const int profielknop1 = 2131099672;
+			// aapt resource value: 0x7f06002f
+			public const int linearLayout1 = 2131099695;
 			
-			// aapt resource value: 0x7f060019
-			public const int profielknop2 = 2131099673;
+			// aapt resource value: 0x7f060032
+			public const int linearLayout2 = 2131099698;
 			
-			// aapt resource value: 0x7f06001a
-			public const int scrollView1 = 2131099674;
+			// aapt resource value: 0x7f060030
+			public const int menuButton = 2131099696;
+			
+			// aapt resource value: 0x7f060024
+			public const int profielknop1 = 2131099684;
+			
+			// aapt resource value: 0x7f060025
+			public const int profielknop2 = 2131099685;
+			
+			// aapt resource value: 0x7f060016
+			public const int relativeLayout1 = 2131099670;
+			
+			// aapt resource value: 0x7f060026
+			public const int scrollView1 = 2131099686;
+			
+			// aapt resource value: 0x7f060033
+			public const int searchBar = 2131099699;
+			
+			// aapt resource value: 0x7f060034
+			public const int searchButton = 2131099700;
 			
 			// aapt resource value: 0x7f060001
 			public const int seekBar1 = 2131099649;
 			
-			// aapt resource value: 0x7f060022
-			public const int startknop = 2131099682;
-			
-			// aapt resource value: 0x7f06000f
-			public const int textView1 = 2131099663;
-			
-			// aapt resource value: 0x7f060015
-			public const int txt_reg_password = 2131099669;
-			
-			// aapt resource value: 0x7f060014
-			public const int txt_reg_username = 2131099668;
+			// aapt resource value: 0x7f06002e
+			public const int startknop = 2131099694;
 			
 			// aapt resource value: 0x7f06001b
-			public const int txtclub = 2131099675;
+			public const int textView1 = 2131099675;
 			
-			// aapt resource value: 0x7f06001d
-			public const int txtleeftijd = 2131099677;
-			
-			// aapt resource value: 0x7f06001e
-			public const int txtlengte = 2131099678;
-			
-			// aapt resource value: 0x7f060020
-			public const int txtmarkt = 2131099680;
-			
-			// aapt resource value: 0x7f06001c
-			public const int txtnaam = 2131099676;
-			
-			// aapt resource value: 0x7f06001f
-			public const int txtpositie = 2131099679;
-			
-			// aapt resource value: 0x7f060011
-			public const int txtpwd = 2131099665;
+			// aapt resource value: 0x7f060031
+			public const int title = 2131099697;
 			
 			// aapt resource value: 0x7f060021
-			public const int txtstart = 2131099681;
+			public const int txt_reg_password = 2131099681;
 			
-			// aapt resource value: 0x7f060010
-			public const int txtusername = 2131099664;
+			// aapt resource value: 0x7f060020
+			public const int txt_reg_username = 2131099680;
+			
+			// aapt resource value: 0x7f060027
+			public const int txtclub = 2131099687;
+			
+			// aapt resource value: 0x7f060029
+			public const int txtleeftijd = 2131099689;
+			
+			// aapt resource value: 0x7f06002a
+			public const int txtlengte = 2131099690;
+			
+			// aapt resource value: 0x7f06002c
+			public const int txtmarkt = 2131099692;
+			
+			// aapt resource value: 0x7f060028
+			public const int txtnaam = 2131099688;
+			
+			// aapt resource value: 0x7f06002b
+			public const int txtpositie = 2131099691;
+			
+			// aapt resource value: 0x7f06001d
+			public const int txtpwd = 2131099677;
+			
+			// aapt resource value: 0x7f06002d
+			public const int txtstart = 2131099693;
+			
+			// aapt resource value: 0x7f06001c
+			public const int txtusername = 2131099676;
 			
 			static Id()
 			{
@@ -182,25 +239,28 @@ namespace SQLite
 			public const int Clubs = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Feyenoord = 2130903041;
+			public const int ClubStandingDetail = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Main = 2130903042;
+			public const int Feyenoord = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Newuser = 2130903043;
+			public const int Main = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int Profiel = 2130903044;
+			public const int Newuser = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int row = 2130903045;
+			public const int Profiel = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int start = 2130903046;
+			public const int row = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int Uitslagen = 2130903047;
+			public const int start = 2130903047;
+			
+			// aapt resource value: 0x7f030008
+			public const int Uitslagen = 2130903048;
 			
 			static Layout()
 			{
