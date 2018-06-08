@@ -50,8 +50,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\StandingsAdapter.cs" />
+    <Compile Include="Twente.cs" />
+    <Compile Include="Sparta.cs" />
+    <Compile Include="Roda.cs" />
+    <Compile Include="VVV.cs" />
+    <Compile Include="NAC.cs" />
+    <Compile Include="Willem.cs" />
+    <Compile Include="Groningen.cs" />
+    <Compile Include="Excelsior.cs" />
+    <Compile Include="Heracles.cs" />
+    <Compile Include="Zwolle.cs" />
+    <Compile Include="Heerenveen.cs" />
+    <Compile Include="Denhaag.cs" />
+    <Compile Include="Vitesse.cs" />
+    <Compile Include="Utrecht.cs" />
+    <Compile Include="AZ.cs" />
     <Compile Include="Clubs.cs" />
     <Compile Include="ClubStandingDetail.cs" />
+    <Compile Include="Ajax.cs" />
+    <Compile Include="PSV.cs" />
     <Compile Include="Feyenoord.cs" />
     <Compile Include="Helper\DBHelper.cs" />
     <Compile Include="Helper\Speler.cs" />
@@ -99,7 +116,7 @@
     <AndroidResource Include="Resources\layout\Clubs.axml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Feyenoord.axml" />
+    <AndroidResource Include="Resources\layout\Clubdata.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Profiel.axml" />
@@ -116,6 +133,9 @@
     <AndroidResource Include="Resources\layout\ClubStandingDetail.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\clublogo81.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

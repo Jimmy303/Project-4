@@ -46,7 +46,9 @@ namespace SQLite
             tbl.username = txtusername.Text;
             tbl.password = txtPassword.Text;
             db.Insert(tbl);
-            Toast.MakeText(this, "Record Added Successfully...,", ToastLength.Short).Show();
+            Toast.MakeText(this, "Registered", ToastLength.Short).Show();
+            var intent = new Intent(this, typeof(MainActivity));
+            StartActivity(intent);
             }
             catch(Exception ex)
             {

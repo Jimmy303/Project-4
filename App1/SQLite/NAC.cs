@@ -15,8 +15,8 @@ using SQLite.Helper;
 
 namespace SQLite
 {
-    [Activity(Label = "Feyenoord")]
-    public class Feyenoord : Activity
+    [Activity(Label = "NAC Breda")]
+    public class NAC : Activity
     {
         DBHelper db;
         SQLiteDatabase sqliteDB;
@@ -44,7 +44,7 @@ namespace SQLite
 
         private void addData()
         {
-            ICursor selectData = sqliteDB.RawQuery("select * from Spelers where Club = 'Feyenoord'", new string[]{ });
+            ICursor selectData = sqliteDB.RawQuery("select * from Spelers where Club = 'NAC Breda'", new string[]{ });
             if(selectData.Count > 0)
             {
                 selectData.MoveToFirst();
