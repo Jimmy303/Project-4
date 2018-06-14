@@ -31,7 +31,7 @@ namespace SQLite
 
         private clubs_standings SelectedStanding;
         private ClubStandingsRepository clubStandingsRepository;
-
+        private clubs_standings comparingStandings;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -43,7 +43,16 @@ namespace SQLite
             clubStandingsRepository = new ClubStandingsRepository();
             var SelectedClub = Intent.Extras.GetString("Selectedclub");
             SelectedStanding = clubStandingsRepository.GetClubs_Standing(SelectedClub);
-    
+            var compareStandings = Intent.Extras.GetString("compareStandings");
+            if (!String.IsNullOrWhiteSpace(compareStandings))
+            {
+                comparingStandings = clubStandingsRepository.GetClubs_Standing(compareStandings);
+            }
+            else
+            {
+                comparingStandings = null;
+            }
+
             FindViews();
             BindData();
             HandleEvents();
@@ -66,15 +75,32 @@ namespace SQLite
         }
         private void BindData()
         {
-            ClubNameText.Text = SelectedStanding.Name;
-            MatchesPlayedText.Text = "Matches Played: " + SelectedStanding.Matches_Played;
-            WinsText.Text = "Wins: " + SelectedStanding.Wins;
-            DrawsText.Text = "Draws: " + SelectedStanding.Draws;
-            LossText.Text = "Loss: " + SelectedStanding.Loss;
-            GoalsForText.Text = "Goals For: " + SelectedStanding.Goals_For;
-            GoalsAgainstText.Text = "Goals Against: " + SelectedStanding.Goals_Against;
-            GoalsDifferenceText.Text = "Goals Difference: " + SelectedStanding.Goal_Difference;
-            PointsText.Text = "Points: " + SelectedStanding.Points;
+            if (comparingStandings == null)
+            {
+                ClubNameText.Text = SelectedStanding.Name;
+                MatchesPlayedText.Text = "Matches Played: " + SelectedStanding.Matches_Played;
+                WinsText.Text = "Wins: " + SelectedStanding.Wins;
+                DrawsText.Text = "Draws: " + SelectedStanding.Draws;
+                LossText.Text = "Loss: " + SelectedStanding.Loss;
+                GoalsForText.Text = "Goals For: " + SelectedStanding.Goals_For;
+                GoalsAgainstText.Text = "Goals Against: " + SelectedStanding.Goals_Against;
+                GoalsDifferenceText.Text = "Goals Difference: " + SelectedStanding.Goal_Difference;
+                PointsText.Text = "Points: " + SelectedStanding.Points;
+                COMPAREButton.Enabled = true;
+            }
+            else
+            {
+                ClubNameText.Text = comparingStandings.Name + " - " + SelectedStanding.Name;
+                MatchesPlayedText.Text = comparingStandings.Matches_Played + " - Matches Played - " + SelectedStanding.Matches_Played;
+                WinsText.Text = comparingStandings.Wins + " - Wins - " + SelectedStanding.Wins;
+                DrawsText.Text = comparingStandings.Draws + " - Draws - " + SelectedStanding.Draws;
+                LossText.Text = comparingStandings.Loss + " - Loss - " + SelectedStanding.Loss;
+                GoalsForText.Text = comparingStandings.Goals_For + " - Goals For - " + SelectedStanding.Goals_For;
+                GoalsAgainstText.Text = comparingStandings.Goals_Against + " - Goals Against - " + SelectedStanding.Goals_Against;
+                GoalsDifferenceText.Text = comparingStandings.Goal_Difference + " - Goals Difference - " + SelectedStanding.Goal_Difference;
+                PointsText.Text = comparingStandings.Points + " - Points - " + SelectedStanding.Points;
+                COMPAREButton.Enabled = false;
+            }
         }
         private void HandleEvents()
         {
@@ -84,14 +110,15 @@ namespace SQLite
 
         private void COMPAREButton_Click(object sender, EventArgs e)
         {
-            var dialog = new AlertDialog.Builder(this);
-            dialog.SetTitle("Onder constructie");
-            dialog.SetMessage("werkt wel maar moet nog aangepast worden!");
-            dialog.Show();
+            var intent = new Intent();
+            intent.PutExtra("compareName", SelectedStanding.Name);
+            SetResult(Result.Ok, intent);
+            Finish();
         }
 
         private void BACKButton_Click(object sender, EventArgs e)
         {
+            SetResult(Result.Canceled, new Intent());
             Finish();
         }
     }

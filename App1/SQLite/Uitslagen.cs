@@ -26,6 +26,8 @@ namespace SQLite
         private Button menuButton;
         private Button searchButton;
         private EditText searchBar;
+        private string compareStandings;
+
 
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -44,7 +46,7 @@ namespace SQLite
 
             FindViews();
             HandleEvents();
-
+            compareStandings = "";
         }
 
         private void StandingsListview_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
@@ -54,7 +56,7 @@ namespace SQLite
             var intent = new Intent();
             intent.SetClass(this, typeof(ClubStandingDetail));
             intent.PutExtra("Selectedclub", club.Name);
-
+            intent.PutExtra("compareStandings", compareStandings);
             StartActivityForResult(intent, 100);
         }
 
@@ -91,6 +93,19 @@ namespace SQLite
         {
             var intent = new Intent(this, typeof(Profiel));
             StartActivity(intent);
+        }
+
+        protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+            if (resultCode == Result.Ok && requestCode == 100)
+            {
+                compareStandings = data.GetStringExtra("compareName");
+            }
+            if (resultCode == Result.Canceled && requestCode == 100)
+            {
+                compareStandings = "";
+            }
         }
     }
 }
