@@ -10,107 +10,89 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="PSV Eindhoven"
-            android:backgroundTint="#ff669900"
             android:id="@+id/psv" />
         <Button
             android:id="@+id/ajax"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:text="Ajax"
-            android:backgroundTint="#ff669900" />
+            android:text="Ajax" />
         <Button
             android:id="@+id/az"
             android:layout_width="fill_parent"
-            android:backgroundTint="#ff669900"
             android:layout_height="fill_parent"
             android:text="az alkmaar" />
         <Button
             android:id="@+id/feyenoord"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="Feyenoord" />
         <Button
             android:id="@+id/utrecht"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="fc utrecht" />
         <Button
             android:id="@+id/vitesse"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="vitesse" />
         <Button
             android:id="@+id/denhaag"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="ado den haag" />
         <Button
             android:id="@+id/heerenveen"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="sc heerenveen" />
         <Button
             android:id="@+id/zwolle"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="pec zwolle" />
         <Button
             android:id="@+id/heracles"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="Heracles" />
         <Button
             android:id="@+id/excelsior"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="Excelsior" />
         <Button
             android:id="@+id/groningen"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="Fc Groningen" />
         <Button
             android:id="@+id/willem"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="Willem II" />
         <Button
             android:id="@+id/nac"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="NAC Breda" />
         <Button
             android:id="@+id/vvv"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="VVV-Venlo" />
         <Button
             android:id="@+id/roda"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="Roda JC Kerkrade" />
         <Button
             android:id="@+id/sparta"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="Sparta Rotterdam" />
         <Button
             android:id="@+id/twente"
-            android:backgroundTint="#ff669900"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="FC Twente" />

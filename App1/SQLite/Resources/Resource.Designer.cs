@@ -93,8 +93,8 @@ namespace SQLite
 			// aapt resource value: 0x7f060028
 			public const int Profieltxt = 2131099688;
 			
-			// aapt resource value: 0x7f06003a
-			public const int STANDINGSLIST = 2131099706;
+			// aapt resource value: 0x7f060039
+			public const int STANDINGSLIST = 2131099705;
 			
 			// aapt resource value: 0x7f060016
 			public const int Wins = 2131099670;
@@ -144,17 +144,17 @@ namespace SQLite
 			// aapt resource value: 0x7f06000b
 			public const int heracles = 2131099659;
 			
+			// aapt resource value: 0x7f060032
+			public const int imageView1 = 2131099698;
+			
 			// aapt resource value: 0x7f060033
-			public const int imageView1 = 2131099699;
+			public const int linearLayout1 = 2131099699;
+			
+			// aapt resource value: 0x7f060036
+			public const int linearLayout2 = 2131099702;
 			
 			// aapt resource value: 0x7f060034
-			public const int linearLayout1 = 2131099700;
-			
-			// aapt resource value: 0x7f060037
-			public const int linearLayout2 = 2131099703;
-			
-			// aapt resource value: 0x7f060035
-			public const int menuButton = 2131099701;
+			public const int menuButton = 2131099700;
 			
 			// aapt resource value: 0x7f06000f
 			public const int nac = 2131099663;
@@ -174,26 +174,23 @@ namespace SQLite
 			// aapt resource value: 0x7f060011
 			public const int roda = 2131099665;
 			
-			// aapt resource value: 0x7f06002b
-			public const int scrollView1 = 2131099691;
+			// aapt resource value: 0x7f060037
+			public const int searchBar = 2131099703;
 			
 			// aapt resource value: 0x7f060038
-			public const int searchBar = 2131099704;
-			
-			// aapt resource value: 0x7f060039
-			public const int searchButton = 2131099705;
+			public const int searchButton = 2131099704;
 			
 			// aapt resource value: 0x7f060012
 			public const int sparta = 2131099666;
 			
-			// aapt resource value: 0x7f060032
-			public const int startknop = 2131099698;
+			// aapt resource value: 0x7f060031
+			public const int startknop = 2131099697;
 			
 			// aapt resource value: 0x7f060020
 			public const int textView1 = 2131099680;
 			
-			// aapt resource value: 0x7f060036
-			public const int title = 2131099702;
+			// aapt resource value: 0x7f060035
+			public const int title = 2131099701;
 			
 			// aapt resource value: 0x7f060013
 			public const int twente = 2131099667;
@@ -204,23 +201,23 @@ namespace SQLite
 			// aapt resource value: 0x7f060025
 			public const int txt_reg_username = 2131099685;
 			
+			// aapt resource value: 0x7f060030
+			public const int txtclub = 2131099696;
+			
 			// aapt resource value: 0x7f06002c
-			public const int txtclub = 2131099692;
-			
-			// aapt resource value: 0x7f06002e
-			public const int txtleeftijd = 2131099694;
-			
-			// aapt resource value: 0x7f06002f
-			public const int txtlengte = 2131099695;
-			
-			// aapt resource value: 0x7f060031
-			public const int txtmarkt = 2131099697;
+			public const int txtleeftijd = 2131099692;
 			
 			// aapt resource value: 0x7f06002d
-			public const int txtnaam = 2131099693;
+			public const int txtlengte = 2131099693;
 			
-			// aapt resource value: 0x7f060030
-			public const int txtpositie = 2131099696;
+			// aapt resource value: 0x7f06002f
+			public const int txtmarkt = 2131099695;
+			
+			// aapt resource value: 0x7f06002b
+			public const int txtnaam = 2131099691;
+			
+			// aapt resource value: 0x7f06002e
+			public const int txtpositie = 2131099694;
 			
 			// aapt resource value: 0x7f060022
 			public const int txtpwd = 2131099682;
