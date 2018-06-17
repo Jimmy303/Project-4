@@ -48,7 +48,10 @@ namespace SQLite
 			public const int clublogo81 = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int Icon = 2130837505;
+			public const int Eredivisielogo = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int Icon = 2130837506;
 			
 			static Drawable()
 			{
@@ -141,6 +144,9 @@ namespace SQLite
 			// aapt resource value: 0x7f06000b
 			public const int heracles = 2131099659;
 			
+			// aapt resource value: 0x7f060033
+			public const int imageView1 = 2131099699;
+			
 			// aapt resource value: 0x7f060034
 			public const int linearLayout1 = 2131099700;
 			
@@ -180,8 +186,8 @@ namespace SQLite
 			// aapt resource value: 0x7f060012
 			public const int sparta = 2131099666;
 			
-			// aapt resource value: 0x7f060033
-			public const int startknop = 2131099699;
+			// aapt resource value: 0x7f060032
+			public const int startknop = 2131099698;
 			
 			// aapt resource value: 0x7f060020
 			public const int textView1 = 2131099680;
@@ -218,9 +224,6 @@ namespace SQLite
 			
 			// aapt resource value: 0x7f060022
 			public const int txtpwd = 2131099682;
-			
-			// aapt resource value: 0x7f060032
-			public const int txtstart = 2131099698;
 			
 			// aapt resource value: 0x7f060021
 			public const int txtusername = 2131099681;
